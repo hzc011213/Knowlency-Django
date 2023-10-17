@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default Title{% endblock %}</title>
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <!-- navigation menus, logo, etc.  -->
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Main content will be replaced by individual templates -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Footer content, copyrights, etc. -->
+    </footer>
+
+    {% block extra_js %}
+
+    {% endblock %}
+</body>
+</html>
